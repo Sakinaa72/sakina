@@ -1,17 +1,48 @@
 import React from "react";
 import styles from "./App.module.css";
 
+const links = [
+  {
+    name: "Github",
+    link: "https://github.com/yasinbhojani",
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/yasinbhojani/",
+  },
+  {
+    name: "X",
+    link: "https://twitter.com/yasin_bhojani",
+  },
+];
+
 function App() {
   return (
-    <div className="text-center font-medium mt-10 text-blue-600 mx-3">
-      <h1 className={`text-4xl font-bold`}>Yasin Bhojani</h1>
-      <p className="my-5">A Fullstack Developer, Tech Enthusiast and Investor.</p>
-      <ul className="flex items-center justify-center gap-3 underline">
-        <li><a href="https://github.com/yasinbhojani" target="_blank">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/yasinbhojani/" target="_blank">Linkedin</a></li>
-        <li><a href="https://twitter.com/yasin_bhojani" target="_blank">X</a></li>
-      </ul>
-    </div>
+    <main>
+      <img src="/jwst.jpg" className="h-80 w-full object-cover" />
+      <div className="text-center font-medium mt-10 text-blue-600 mx-3">
+        <h1
+          className={`text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600`}
+        >
+          Yasin B.
+        </h1>
+        <p className="my-5">
+          A full-stack developer, tech enthusiast, and investor.
+        </p>
+        <ul className="flex items-center justify-center gap-3">
+          {links.map((link, index) => (
+            <>
+              <li>
+                <a href={link.link} target="_blank">
+                  {link.name}
+                </a>
+              </li>
+              {index !== links.length - 1 && "•"}
+            </>
+          ))}
+        </ul>
+      </div>
+    </main>
   );
 }
 
