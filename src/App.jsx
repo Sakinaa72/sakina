@@ -25,9 +25,7 @@ function App() {
         className="h-64 w-full object-cover"
       />
       <div className="text-center font-medium mt-10 text-blue-600 mx-3">
-        <h1
-          className={`text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600`}
-        >
+        <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600 w-fit mx-auto">
           Yasin B.
         </h1>
         <p className="my-5">
@@ -35,14 +33,14 @@ function App() {
         </p>
         <ul className="flex items-center justify-center gap-3">
           {links.map((link, index) => (
-            <>
+            <React.Fragment key={link.name}>
               <li>
                 <a href={link.link} target="_blank">
                   {link.name}
                 </a>
               </li>
               {index !== links.length - 1 && "•"}
-            </>
+            </React.Fragment>
           ))}
         </ul>
       </div>
