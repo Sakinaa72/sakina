@@ -24,8 +24,8 @@ function App() {
         alt="The Enduring Stellar Lifecycle in 30 Doradus (Composite: Infrared + X-ray) by JWST"
         className="h-64 w-full object-cover"
       />
-      <div className="text-center font-medium mt-10 text-blue-600 mx-3">
-        <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600 w-fit mx-auto">
+      <div className="text-center font-medium mt-10 text-blue-600 mx-5">
+        <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 w-fit mx-auto">
           Yasin B.
         </h1>
         <p className="my-5">
