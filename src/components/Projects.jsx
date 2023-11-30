@@ -5,17 +5,17 @@ const Projects = () => {
     {
       name: "shell",
       description:
-        "a social media hub fostering connections among users to share passions from food, travel, gaming, and more.",
+        "a social media hub fostering connections among users to share passions.",
       link: "https://github.com/yasinbhojani/major-project",
     },
   ];
 
   return (
     <section>
-      <p className="font-mono text-lg tracking-tighter font-medium">Projects</p>
-      <div className="py-5">
+      <p className="font-mono text-lg tracking-tighter font-medium">projects</p>
+      <ul className="py-4 space-y-4">
         {projects.map((project) => (
-          <div>
+          <li key={project.name}>
             <a
               href={project.link}
               target="_blank"
@@ -24,9 +24,9 @@ const Projects = () => {
               {project.name}
             </a>
             <p className="text-slate-600">{project.description}</p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

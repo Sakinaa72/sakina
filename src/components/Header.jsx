@@ -25,19 +25,19 @@ const Header = () => {
   ];
 
   return (
-    <section className="py-10 flex justify-between">
+    <header className="pt-5 pb-8 flex justify-between gap-1">
       <div className="flex flex-col items-start">
-        <h1 className="font-bold text-lg">yasinbhojani</h1>
-        <p className="my-2">
+        <h1 className="font-bold text-xl">yasinbhojani</h1>
+        <p className="my-1">
           a full-stack developer, tech enthusiast, and investor.
         </p>
       </div>
       <ul className="flex items-center justify-center gap-2 select-none">
         {links.map((link) => (
-          <Social social={link} />
+          <Social social={link} key={link.name} />
         ))}
       </ul>
-    </section>
+    </header>
   );
 };
 

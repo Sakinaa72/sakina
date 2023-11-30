@@ -5,7 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       sans: ["Inter", "SF Pro Display"],
-      mono: ["Roboto Mono", "SF Mono", "Hack"],
+      mono: ["Roboto Mono", "SF Mono", "Hack", "monospace"],
     },
   },
   plugins: [],

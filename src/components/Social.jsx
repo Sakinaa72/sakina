@@ -8,7 +8,11 @@ const Social = ({ social }) => {
         target="_blank"
         className="block cursor-pointer rounded-md hover:bg-gray-100 p-2 transition-colors"
       >
-        <img src={social.icon} alt={social.name} className="w-5 h-5" />
+        <img
+          src={social.icon}
+          alt={social.name}
+          className="w-[20px] h-[20px] min-w-[20px] min-h-[20px]"
+        />
       </a>
     </li>
   );
