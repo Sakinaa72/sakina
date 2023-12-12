@@ -1,4 +1,5 @@
 import React from "react";
+import Project from "./Project";
 
 const Projects = () => {
   const projects = [
@@ -7,24 +8,22 @@ const Projects = () => {
       description:
         "a social media hub fostering connections among users to share passions.",
       link: "https://github.com/yasinbhojani/major-project",
+      badges: [],
+    },
+    {
+      name: "blime",
+      description: "an app for managing your tasks",
+      link: "https://github.com/yasinbhojani/blime-client",
+      badges: ["in progress"],
     },
   ];
 
   return (
     <section>
       <p className="font-mono text-lg tracking-tighter font-medium">projects</p>
-      <ul className="py-4 space-y-4">
+      <ul className="py-5 space-y-6">
         {projects.map((project) => (
-          <li key={project.name}>
-            <a
-              href={project.link}
-              target="_blank"
-              className="underline underline-offset-2 decoration-1 text-lg font-medium transition-colors hover:text-gray-700"
-            >
-              {project.name}
-            </a>
-            <p className="text-slate-600">{project.description}</p>
-          </li>
+          <Project project={project} />
         ))}
       </ul>
     </section>
