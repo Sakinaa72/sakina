@@ -23,7 +23,7 @@ const Projects = () => {
       <p className="font-mono text-lg tracking-tighter font-medium">projects</p>
       <ul className="py-5 space-y-6">
         {projects.map((project) => (
-          <Project project={project} />
+          <Project project={project} key={project.name}/>
         ))}
       </ul>
     </section>
