@@ -27,8 +27,8 @@ const Header = () => {
   return (
     <header className="pt-5 pb-8 flex justify-between gap-1">
       <div className="flex flex-col items-start">
-        <h1 className="font-bold text-xl">yasinbhojani</h1>
-        <p className="my-1">
+        <h1 className="font-bold text-3xl dark:text-gray-100">Yasin Bhojani</h1>
+        <p className="my-1 text-xl dark:text-gray-300">
           a full-stack developer, tech enthusiast, and investor.
         </p>
       </div>

@@ -7,14 +7,14 @@ const Project = ({ project }) => {
       <a
         href={project.link}
         target="_blank"
-        className="underline underline-offset-2 decoration-1 text-lg font-medium transition-colors hover:text-gray-700"
+        className="underline underline-offset-2 decoration-1 text-xl font-medium transition-colors hover:text-gray-700 dark:text-gray-100"
       >
         {project.name}
       </a>
       {project.badges.map((badge) => (
         <Badge key={badge}>{badge}</Badge>
       ))}
-      <p className="text-slate-600">{project.description}</p>
+      <p className="text-slate-800 text-lg dark:text-gray-400">{project.description}</p>
     </li>
   );
 };
