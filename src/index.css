@@ -5,10 +5,7 @@
 :root {
   --primary: #2563eb;
 
-  /* font-family: "Inter", sans-serif; */
-  /* font-family: "Space Grotesk", sans-serif; */
-  /* font-family: "Nunito", sans-serif; */
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 0.9rem;

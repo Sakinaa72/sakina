@@ -20,8 +20,8 @@ const Projects = () => {
 
   return (
     <section>
-      <p className="font-mono text-lg tracking-tighter font-medium dark:text-gray-200">projects</p>
-      <ul className="py-5 space-y-6">
+      <p className="font-mono text-lg font-medium uppercase tracking-wide dark:text-gray-200">projects</p>
+      <ul className="py-5 space-y-6 text-lg">
         {projects.map((project) => (
           <Project project={project} key={project.name}/>
         ))}

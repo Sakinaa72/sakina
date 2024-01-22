@@ -1,25 +1,31 @@
 import React from "react";
 
-import twitterIcon from "../assets/twitter.svg";
-import githubIcon from "../assets/github.svg";
-import linkedinIcon from "../assets/linkedin.svg";
+import twitterDarkIcon from "../assets/dark/twitter.svg";
+import githubDarkIcon from "../assets/dark/github.svg";
+import linkedinDarkIcon from "../assets/dark/linkedin.svg";
+import twitterLightIcon from "../assets/light/twitter.svg";
+import githubLightIcon from "../assets/light/github.svg";
+import linkedinLightIcon from "../assets/light/linkedin.svg";
 import Social from "./Social";
 
 const Header = () => {
   const links = [
     {
       name: "Github",
-      icon: githubIcon,
+      darkIcon: githubDarkIcon,
+      lightIcon: githubLightIcon,
       link: "https://github.com/yasinbhojani",
     },
     {
       name: "Linkedin",
-      icon: linkedinIcon,
+      darkIcon: linkedinDarkIcon,
+      lightIcon: linkedinLightIcon,
       link: "https://www.linkedin.com/in/yasinbhojani/",
     },
     {
       name: "X",
-      icon: twitterIcon,
+      darkIcon: twitterDarkIcon,
+      lightIcon: twitterLightIcon,
       link: "https://twitter.com/yasin_bhojani",
     },
   ];
@@ -27,8 +33,10 @@ const Header = () => {
   return (
     <header className="pt-5 pb-8 flex justify-between gap-1">
       <div className="flex flex-col items-start">
-        <h1 className="font-bold text-3xl dark:text-gray-100">Yasin Bhojani</h1>
-        <p className="my-1 text-xl dark:text-gray-300">
+        <h1 className="font-semibold text-2xl dark:text-gray-100">
+          Yasin Bhojani
+        </h1>
+        <p className="my-1 text-lg dark:text-gray-300">
           a full-stack developer, tech enthusiast, and investor.
         </p>
       </div>

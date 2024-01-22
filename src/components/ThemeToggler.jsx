@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
-import sunIcon from "../assets/sun.svg";
-import moonIcon from "../assets/moon.svg";
+import sunIcon from "../assets/light/sun.svg";
+import moonIcon from "../assets/dark/moon.svg";
 
 const ThemeToggler = () => {
-  const [theme, setTheme] = useState();
+  const [theme, setTheme] = useState("light");
   useEffect(() => {
     const currentMode = localStorage.getItem("theme");
     if (currentMode) {
       setTheme(currentMode);
+      const htmls = document.getElementsByTagName("html");
+      if (currentMode === "dark") {
+        htmls[0].classList.add("dark");
+      }
     } else {
       setTheme("light");
     }
@@ -18,7 +22,15 @@ const ThemeToggler = () => {
   }, [theme]);
 
   const toggleThemeHandler = () => {
-    setTheme((theme) => (theme === "light" ? "dark" : "light"));
+    setTheme((theme) => {
+      const html = document.getElementsByTagName("html");
+      if (theme === "light") {
+        html[0].classList.add("dark");
+      } else {
+        html[0].classList.remove("dark");
+      }
+      return theme === "light" ? "dark" : "light";
+    });
   };
 
   return (
