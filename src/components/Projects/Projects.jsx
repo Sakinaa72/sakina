@@ -20,10 +20,10 @@ const Projects = () => {
 
   return (
     <section>
-      <p className="font-mono text-lg font-medium uppercase tracking-wide dark:text-gray-200">projects</p>
+      <p className="text-lg font-medium uppercase text-gray-100">projects</p>
       <ul className="py-5 space-y-6 text-lg">
         {projects.map((project) => (
-          <Project project={project} key={project.name}/>
+          <Project project={project} key={project.name} />
         ))}
       </ul>
     </section>

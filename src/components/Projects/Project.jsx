@@ -1,5 +1,5 @@
 import React from "react";
-import Badge from "./Badge";
+import Badge from "../Badge";
 
 const Project = ({ project }) => {
   return (
@@ -7,14 +7,14 @@ const Project = ({ project }) => {
       <a
         href={project.link}
         target="_blank"
-        className="font-medium transition-colors hover:text-gray-700 dark:text-gray-100"
+        className="font-medium text-gray-100 hover:text-gray-200 transition-color"
       >
         {project.name}
       </a>
       {project.badges.map((badge) => (
         <Badge key={badge}>{badge}</Badge>
       ))}
-      <p className="text-slate-700 dark:text-gray-400">{project.description}</p>
+      <p className="text-gray-400">{project.description}</p>
     </li>
   );
 };

@@ -22,6 +22,10 @@
   padding: 0;
 }
 
+::selection {
+  @apply bg-slate-100 text-black opacity-50;
+}
+
 code {
   font-family: "Hack", monospace;
 }
