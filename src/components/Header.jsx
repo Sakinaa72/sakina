@@ -30,7 +30,8 @@ const Header = () => {
       <div className="flex flex-col items-start">
         <h1 className="font-semibold text-2xl text-gray-100">Yasin Bhojani</h1>
         <p className="my-1 text-lg text-gray-300">
-          a full-stack developer, tech enthusiast, and investor.
+          {/* a full-stack developer, tech enthusiast, and investor. */}
+          Software Engineer
         </p>
       </div>
       <ul className="flex items-center justify-center gap-2 select-none">

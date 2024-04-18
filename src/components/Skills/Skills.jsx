@@ -14,10 +14,15 @@ const Skills = () => {
     { name: "REST APIs" },
     { name: "Figma" },
     { name: "Git" },
+    { name: "Docker" },
+    { name: "Redis" },
+    { name: "AWS" },
+    { name: "Spring Boot" },
+    { name: "React Native" },
   ];
 
   return (
-    <section className="md:max-w-[70%]">
+    <section>
       <p className="text-lg font-medium uppercase text-gray-100 mt-5">SKILLS</p>
       <ul className="py-5 text-lg flex flex-row flex-wrap gap-2">
         {skills.map((skill) => (
