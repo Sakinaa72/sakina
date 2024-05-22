@@ -6,7 +6,7 @@
   --primary: #2563eb;
 
   font-family: "Instrument Sans", "Inter", sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-weight: 400;
   font-size: 0.9rem;
 
@@ -23,7 +23,7 @@
 }
 
 ::selection {
-  @apply bg-slate-100 text-black opacity-50;
+  @apply bg-gray-600 text-white;
 }
 
 code {

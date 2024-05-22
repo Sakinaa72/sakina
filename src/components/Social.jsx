@@ -6,7 +6,7 @@ const Social = ({ social }) => {
       <a
         href={social.link}
         target="_blank"
-        className="block cursor-pointer rounded-md hover:bg-gray-800 p-2 transition-colors"
+        className="block cursor-pointer rounded-md p-1"
       >
         <img
           src={social.icon}

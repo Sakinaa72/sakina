@@ -23,10 +23,10 @@ const Skills = () => {
 
   return (
     <section>
-      <p className="text-lg font-medium uppercase text-gray-100 mt-5">SKILLS</p>
-      <ul className="py-5 text-lg flex flex-row flex-wrap gap-2">
+      <p className="text-lg font-medium mt-5">Skills</p>
+      <ul className="pt-5 text-lg flex flex-row flex-wrap gap-2">
         {skills.map((skill) => (
-          <Skill skill={skill} />
+          <Skill skill={skill} key={skill.name} />
         ))}
       </ul>
     </section>
