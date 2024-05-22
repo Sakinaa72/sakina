@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Inter", "SF Pro Display"],
+      sans: ["Instrument Sans, Inter", "SF Pro Display"],
       mono: ["Roboto Mono", "SF Mono", "Hack", "monospace"],
     },
   },
