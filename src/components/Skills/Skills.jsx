@@ -19,6 +19,7 @@ const Skills = () => {
     { name: "AWS" },
     { name: "Spring Boot" },
     { name: "React Native" },
+    { name: "MySQL" },
   ];
 
   return (
