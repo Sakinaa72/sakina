@@ -9,23 +9,23 @@ const Header = () => {
     {
       name: "Github",
       icon: githubIconSVG,
-      link: "https://github.com/yasinbhojani",
+      link: "https://github.com/Sakinaa72/",
     },
     {
       name: "Linkedin",
       icon: linkedinIconSVG,
-      link: "https://www.linkedin.com/in/yasinbhojani/",
+      link: "https://www.linkedin.com/in/sakinaarupanii/",
     },
     {
-      name: "X",
+      name: "LeetCode",
       icon: xIconSVG,
-      link: "https://twitter.com/yasin_bhojani",
+      link: "https://leetcode.com/u/sakiname72/",
     },
   ];
 
   return (
     <header className="pt-5 ">
-      <h1 className="font-semibold text-2xl">Yasin Bhojani</h1>
+      <h1 className="font-semibold text-2xl">Sakina Rupani</h1>
       <p className="text-lg text-gray-500">Software Engineer</p>
       <ul className="flex items-start justify-start gap-3 select-none mt-3">
         {links.map((link) => (

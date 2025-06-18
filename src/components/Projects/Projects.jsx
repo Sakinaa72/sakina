@@ -1,25 +1,23 @@
 import React from "react";
 import Project from "./Project";
-import { blimeLogo, shellLogo } from "../../assets";
 
 const Projects = () => {
   const projects = [
     {
-      logo: shellLogo,
-      name: "shell",
+      name: "TeamTasker",
       description:
-        "a social media hub fostering connections among users to share passions.",
-      link: "https://github.com/yasinbhojani/major-project",
+        "A full-featured task and project management system using React and Django microservices. Includes authentication, task assignments...",
+      link: "",
       badges: [],
     },
+
     {
-      logo: blimeLogo,
-      name: "blime",
-      description:
-        "an app for managing your tasks and enhancing your productivity.",
-      link: "https://blime.vercel.app/",
+      name: "Let's Work",
+      description: "A MERN stack project inspired by LinkedIn. Enables professional networking, posting updates, and engaging with other...",
+      link: "",
       badges: [],
     },
+
   ];
 
   return (
