@@ -16,11 +16,7 @@ const Header = () => {
       icon: linkedinIconSVG,
       link: "https://www.linkedin.com/in/sakinaarupanii/",
     },
-    {
-      name: "LeetCode",
-      icon: xIconSVG,
-      link: "https://leetcode.com/u/sakiname72/",
-    },
+    
   ];
 
   return (
